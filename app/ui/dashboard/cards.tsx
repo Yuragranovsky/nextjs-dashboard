@@ -5,6 +5,7 @@ import {
   InboxIcon,
 } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
+import { BeatLoader } from 'react-spinners';
 
 const iconMap = {
   collected: BanknotesIcon,
