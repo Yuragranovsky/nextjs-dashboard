@@ -47,3 +47,4 @@ export const { auth, signIn, signOut } = NextAuth({
         
  
 });
+export const {  handlers } = NextAuth(authConfig);
