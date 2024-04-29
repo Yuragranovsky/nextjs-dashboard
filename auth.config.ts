@@ -4,7 +4,7 @@ export const authConfig: NextAuthConfig = {
   pages: {
     signIn: '/login',
   },
-  secret: process.env.AUTH_SECRET,
+  
   callbacks: {
     authorized({ auth, request }) {
       const isLoggedIn = !!auth?.user;

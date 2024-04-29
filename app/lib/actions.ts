@@ -3,7 +3,7 @@ import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import {z} from 'zod'
-import { signIn, signOut } from '@/auth';
+import { signIn, signOut } from '../pages/api/[...nextauth]';
 import { AuthError } from 'next-auth';
 const CreateUpdateInvoice = z.object({
     customerId: z.string(),
